@@ -3,7 +3,7 @@
 <!-- PROJECT LOGO -->
 <div align="center">
 <a href="https://github.com/grabovszky/nextjs-starter">
-<img src="https://github.com/grabovszky/nextjs-starter/public/logo.svg" alt="" width="80" height="80">
+<img src="https://raw.githubusercontent.com/grabovszky/nextjs-starter/main/public/logo.svg" alt="" width="80" height="80">
 </a>
 </div>
 
