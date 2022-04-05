@@ -1,35 +1,62 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+### Node ###
+# Dependency directories
+node_modules/
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
+# Logs
+logs
+*.log
 
-# testing
-/coverage
-
-# next.js
-/.next/
-/out/
-
-# production
-/build
-
-# misc
-.DS_Store
-*.pem
-
-# debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-.pnpm-debug.log*
-
-# local env files
-.env*.local
-
-# vercel
-.vercel
-
-# typescript
+# TypeScript cache
 *.tsbuildinfo
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# dotenv environment variable files
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+
+### NextJS ###
+# Next build dir
+.next/
+
+### Sass ###
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
+
+### Linux ###
+.directory
+.Trash-*
+.nfs*
+
+### macOS ###
+.DS_Store
+Icon
+._*
+.Trashes
+
+### Windows ###
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+### VisualStudioCode ###
+.vscode/
+
+# Local History for Visual Studio Code
+.history/
+
+# Built Visual Studio Code Extensions
+*.vsix
+
+# Ignore all local history of files
+.history
+.ionide

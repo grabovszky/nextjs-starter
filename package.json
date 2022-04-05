@@ -1,24 +1,97 @@
 {
-  "name": "virtualshop-tv",
+  "name": "nextjs-starter",
   "version": "0.1.0",
+  "description": "A simple Next.js starter kit configured with TypeScript, ESLint, Prettier, TailwindCSS, and more.",
+  "main": "pages/index.tsx",
   "private": true,
+  "license": "MIT",
+  "author": "Kristóf Gábor. <gaborkristof@protonmail.com> (https://gaborkristof.com)",
+  "contributors": [
+    "Kristóf Gábor <gaborkristof@protonmail.com> (https://gaborkristof.com)"
+  ],
+  "homepage": "https://github.com/grabovszky/nextjs-starter",
+  "repository": "https://github.com/grabovszky/nextjs-starter.git",
+  "bugs": "https://github.com/grabovszky/nextjs-starter/issues",
+  "keywords": [
+    "React",
+    "Next.js",
+    "TypeScript",
+    "TailwindCSS",
+    "Sass",
+    "ESLint",
+    "Prettier",
+    "Husky",
+    "Commitlint"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prepare": "husky install"
   },
   "dependencies": {
     "next": "12.1.4",
     "react": "18.0.0",
-    "react-dom": "18.0.0"
+    "react-dom": "18.0.0",
+    "sass": "^1.49.11"
   },
   "devDependencies": {
+    "@commitlint/cli": "^16.2.3",
+    "@commitlint/config-conventional": "^16.2.1",
     "@types/node": "17.0.23",
     "@types/react": "17.0.43",
     "@types/react-dom": "17.0.14",
-    "eslint": "8.12.0",
-    "eslint-config-next": "12.1.4",
-    "typescript": "4.6.3"
+    "@typescript-eslint/eslint-plugin": "^5.18.0",
+    "autoprefixer": "^10.4.4",
+    "eslint": "^8.12.0",
+    "eslint-config-next": "^12.1.4",
+    "eslint-config-prettier": "^8.5.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.7",
+    "postcss": "^8.4.12",
+    "prettier": "^2.6.2",
+    "tailwindcss": "^3.0.23",
+    "typescript": "^4.6.3"
+  },
+  "engines": {
+    "node": ">= 16.14.2",
+    "npm": ">= 8.5.0"
+  },
+  "browserslist": [
+    "defaults",
+    "not IE 11"
+  ],
+  "eslintConfig": {
+    "plugins": [
+      "@typescript-eslint"
+    ],
+    "extends": [
+      "next/core-web-vitals",
+      "plugin:@typescript-eslint/recommended",
+      "prettier"
+    ],
+    "rules": {}
+  },
+  "prettier": {
+    "semi": false,
+    "trailingComma": "es5",
+    "singleQuote": true,
+    "tabWidth": 2,
+    "useTabs": false
+  },
+  "lint-staged": {
+    "**/*.(ts|tsx|js)": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "**/*.(md|json)": [
+      "prettier --write"
+    ]
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
   }
 }
